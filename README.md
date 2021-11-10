@@ -12,11 +12,11 @@ CLASIFICACIÓN DE TEXTOS
 
 Se ha realizado una clasificación de una serie de opiniones sobre un hotel, que están recogidas en el fichero hotel.csv. Este fichero contiene dos columnas. La primera, bajo el título text, contiene las opiniones a clasificar, mientras que la segunda, bajo el título label, contiene la puntuación otorgada. Las opiniones se agrupan según su calificación en un valor 5 y otro valor 3. 
 
-En primer lugar he realizado el preprocesamiento necesario mediante las funciones contenidas en la librería NLTK, realizando una escritura modular del código para comprobar si se obtienen mejores resultados al utilizar stop-words, al realizar una extracción de formas canónicas, etc.
+En primer lugar, he realizado el preprocesamiento necesario mediante las funciones contenidas en la librería NLTK, realizando una escritura modular del código para comprobar si se obtienen mejores resultados al utilizar stop-words, al realizar una extracción de formas canónicas, etc.
 
 En segundo lugar, he dividido el conjunto de documentos en un subconjunto de entrenamiento y otro de evaluación.
 
-A continuación he convertido el corpus de documentos en una matriz TF-idf, para ello he utilizado el vectorizador TfidfVectorizer, que forma parte de sklearn.
+A continuación, he convertido el corpus de documentos en una matriz TF-idf, para ello he utilizado el vectorizador TfidfVectorizer, que forma parte de sklearn.
 
 Por último, he realizado  modelos de entrenamiento con algoritmos de clasificador bayesiano ingenuo y máquinas SVM. He obtenido resultados de precisión de la clasificación, así como las matrices de confusión para ambos modelos.
 
